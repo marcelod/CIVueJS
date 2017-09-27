@@ -13,7 +13,10 @@ var vm = new Vue({
       { name: 'CSS' },
       { name: 'Python' },
       { name: 'C++' },
-    ]
+    ],
+    image: "https://cdn.pixabay.com/photo/2016/03/05/19/10/airplane-1238277_960_720.jpg",
+    altImage: "test vue"
+
   },
   computed : {
     // uma função "getter" computada (computed getter)
@@ -34,3 +37,5 @@ var vm = new Vue({
     }
   }
 })
+
+

@@ -31,4 +31,8 @@
 	<h4>Diretiva model</h4>
 	<input type="text" v-model="message">
 
+	<h4>Diretiva bind</h4>
+	<p>Para se usar a diretiva v-bind pode escrever o "v-bind:[atributo]" ou ":[atributo]"</p>
+	<img v-bind:src="image" :alt="altImage" width="100px" height="100px">
+
 </div>
