@@ -2,7 +2,18 @@ var vm = new Vue({
   el: '#main',
   data: {
     message: 'Olá Vue!',
-    rawHtml: '<h3>Teste com html</h3>'
+    rawHtml: '<h3>Teste com html</h3>',
+    user: {
+      id: 1,
+      name: 'Marcelo'
+    },
+    linguagens: [
+      { name: 'JavaScript' },
+      { name: 'PHP' },
+      { name: 'CSS' },
+      { name: 'Python' },
+      { name: 'C++' },
+    ]
   },
   computed : {
     // uma função "getter" computada (computed getter)
