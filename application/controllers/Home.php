@@ -7,7 +7,7 @@ class Home extends MY_Controller {
 	{
 		$this->data['js'] = load_js('first_test_vue');
 
-		$this->data['a'] = 'Teste Vue';
+		$this->data['title'] = 'Teste Codeigniter + Vue';
 
 		$this->render();
 	}

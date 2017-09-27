@@ -6,5 +6,7 @@
 
 	<base href="<?= base_url(); ?>">
 
+	<?= $css ?>
+
 </head>
 <body>

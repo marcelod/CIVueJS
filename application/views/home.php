@@ -1,5 +1,5 @@
 <div id="main">
-	<h1><?= $a ?></h1>
+	<h1><?= $title ?></h1>
 
 	<p>Mensagem original: {{ message }}</p>
 
