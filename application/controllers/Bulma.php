@@ -8,7 +8,7 @@ class Bulma extends MY_Controller {
 		$this->data['css'] = load_css('bulma.min');
 		$this->data['js'] = load_js('test_bulma_vue');
 
-		// $this->data['title'] = 'Teste Codeigniter + Vue + Bulma';
+		// $this->data['menu'] = $this->load->view('template/bulma_menu', [], true);
 
 		$this->render();
 	}

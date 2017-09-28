@@ -1,5 +1,17 @@
-<div id="main">
-	<h1>{{ title }}</h1>
+<div id="main" class="container is-fullhd" >
+	<section class="hero is-success">
+		<div class="hero-body">
+			<div class="container">
+		  		<h1 class="title">
+		    		{{ title }}
+		  		</h1>
+		  		<h2 class="subtitle">
+		    		{{ subtitle }}
+		  		</h2>
+			</div>
+		</div>
+	</section>
+
 
 	<button :class="btnClassA" v-on:click.prevent.stop="enviar()">Botão A</button>
 	<button :class="btnClassB" @click.prevent.stop="enviar()">Botão B</button>
@@ -12,5 +24,11 @@
 			{{ user.name | toUpperCase | truncate(7) }}
 		</li>
 	</ul>
+
+	<hr>
+
+	<h3>Computed & Watch</h3>
+
+	<p>{{ fullName }}</p>
 
 </div>

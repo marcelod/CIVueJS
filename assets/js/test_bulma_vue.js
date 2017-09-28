@@ -1,7 +1,8 @@
 var vm = new Vue({
   el: '#main',
   data: {
-    title: 'Teste Codeigniter + Vue + Bulma',
+    title: 'Teste Codeigniter + Vue',
+    subtitle: 'e para o template será o Bulma',
     btnClassA : {
       'button is-dark' : true,
       'is-small' : true,
@@ -27,7 +28,10 @@ var vm = new Vue({
       { name: 'Marcelo Diniz' },
       { name: 'Vanessa Cicolani' },
       { name: 'Thomas Cicolani Diniz' }
-    ]
+    ],
+    firstName: "",
+    lastName: "",
+    // fullName: "",
 
   },
 
@@ -35,6 +39,31 @@ var vm = new Vue({
     enviar() {
       alert('Enviado!')
     },
+
+    updateUser() {
+      console.log('Primeiro nome do usuário alterado com sucesso!');
+    }
+  },
+
+  computed : {
+
+    fullName() {
+      return this.firstName + ' ' + this.lastName;
+    },
+
+
+  },
+
+  watch : {
+
+    firstName(newValue) {
+      this.updateUser();
+    },
+
+    // lastName(newValue) {
+    //   this.fullName = this.firstName + ' ' + newValue;
+    // }
+
   },
 
   filters: {
