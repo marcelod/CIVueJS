@@ -1,6 +1,10 @@
 
+Vue.component('navbar', {
+  template: "#Lbar"
+});
+
 Vue.component('menu-bar', {
-  template: "#menuC"
+  template: "#Imenu"
 });
 
 

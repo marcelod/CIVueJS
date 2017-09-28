@@ -12,9 +12,11 @@
 		</div>
 	</section>
 
+	<navbar></navbar>
+
 	<hr>
 
-	<menu-bar></menu-bar>
+
 
 	<button :class="btnClassA" v-on:click.prevent.stop="enviar()">Botão A</button>
 	<button :class="btnClassB" @click.prevent.stop="enviar()">Botão B</button>
@@ -36,10 +38,29 @@
 
 </div>
 
-<template id="menuC">
-	<ul>
-		<li>Item 1</li>
-		<li>Item 2</li>
-		<li>Item 3</li>
-	</ul>
+
+<template id="Lbar">
+	<nav class="level">
+		<menu-bar></menu-bar>
+	</nav>
+</template>
+
+<template id="Imenu">
+	<div>
+		<p class="level-item has-text-centered">
+			<a class="link is-info">Home</a>
+		</p>
+		<p class="level-item has-text-centered">
+			<a class="link is-info">Menu</a>
+		</p>
+		<p class="level-item has-text-centered">
+			<img src="http://bulma.io/images/bulma-type.png" alt="" style="height: 30px;">
+		</p>
+		<p class="level-item has-text-centered">
+			<a class="link is-info">Reservations</a>
+		</p>
+		<p class="level-item has-text-centered">
+			<a class="link is-info">Contact</a>
+		</p>
+	</div>
 </template>
