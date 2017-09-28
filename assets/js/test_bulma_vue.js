@@ -78,6 +78,44 @@ var vm = new Vue({
 
       return str;
     }
+  },
+
+  // hooks vue.js
+
+  beforeCreate(){
+    console.log('beforeCreate');
+    console.log('titulo', this.title);
+    console.log('el', this.$el);
+  },
+
+  created(){
+    console.log('created');
+    console.log('titulo', this.title);
+    console.log('el', this.$el);
+  },
+
+  beforeMount(){
+    console.log('beforeMount');
+    console.log('titulo', this.title);
+    console.log('el', this.$el);
+  },
+
+  mouted(){
+    console.log('mouted');
+    console.log('titulo', this.title);
+    console.log('el', this.$el);
+  },
+
+  beforeUpdate(){
+    console.log('beforeUpdate');
+    console.log('titulo', this.title);
+    console.log('el', this.$el);
+  },
+
+  updated(){
+    console.log('updated');
+    console.log('titulo', this.title);
+    console.log('el', this.$el);
   }
 
 })
