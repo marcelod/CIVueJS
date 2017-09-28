@@ -1,3 +1,9 @@
+
+Vue.component('menu-bar', {
+  template: "#menuC"
+});
+
+
 var vm = new Vue({
   el: '#main',
   data: {

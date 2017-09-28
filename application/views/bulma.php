@@ -12,6 +12,9 @@
 		</div>
 	</section>
 
+	<hr>
+
+	<menu-bar></menu-bar>
 
 	<button :class="btnClassA" v-on:click.prevent.stop="enviar()">Botão A</button>
 	<button :class="btnClassB" @click.prevent.stop="enviar()">Botão B</button>
@@ -32,3 +35,11 @@
 	<p>{{ fullName }}</p>
 
 </div>
+
+<template id="menuC">
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+</template>
