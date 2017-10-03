@@ -35,4 +35,11 @@
 	<p>Para se usar a diretiva v-bind pode escrever o "v-bind:[atributo]" ou ":[atributo]"</p>
 	<img v-bind:src="image" :alt="altImage" width="100px" height="100px">
 
+	<h4>Outros exemplos</h4>
+
+	<ul>
+		<li><a href="bulma">Bulma</a></li>
+		<li><a href="bootstrap">Bootstrap</a></li>
+	</ul>
+
 </div>
