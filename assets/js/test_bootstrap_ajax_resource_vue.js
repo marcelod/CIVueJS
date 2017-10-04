@@ -37,7 +37,11 @@ Vue.component('panel', {
 var my_mixin = {
   methods: {
     getUsers() {
+
+      this.loader.users = true;
+
       var url = 'http://jsonplaceholder.typicode.com/users';
+
       this.$http.get(url)
         .then(function(r) {
           this.users = r.body;
