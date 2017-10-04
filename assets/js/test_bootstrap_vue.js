@@ -79,15 +79,30 @@ Vue.component('panel', {
 
 
 // var eventBus = new Vue();
-
 Vue.prototype.$eventHub = new Vue();
+
+var my_mixin = {
+  methods: {
+    getUsers() {
+      console.log('getUsers a');
+    }
+  }
+}
 
 
 var vm = new Vue({
   el: '#main',
 
+  mixins: [my_mixin],
+
   data: {
     title: 'Teste Codeigniter + Vue',
+  },
+
+  methods: {
+    getUsers() {
+      console.log('getUsers b');
+    }
   }
 
 });

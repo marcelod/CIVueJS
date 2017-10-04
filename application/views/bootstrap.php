@@ -24,6 +24,8 @@
 		  	<template slot=body>
 			  	<div class="panel-body" slot="body">
 		    		Panel content
+					<br>
+		    		<button class="btn btn-success" @click.stop.prevent="getUsers()">Lista usuários por mixins</button>
 		  		</div>
 		  	</template>
 		</panel>
