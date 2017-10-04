@@ -99,12 +99,6 @@ var vm = new Vue({
     title: 'Teste Codeigniter + Vue',
   },
 
-  methods: {
-    getUsers() {
-      console.log('getUsers b');
-    }
-  }
-
 });
 
 
