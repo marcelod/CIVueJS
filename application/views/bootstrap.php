@@ -9,9 +9,14 @@
 
 			<h1>{{ title }}</h1>
 
-			<menu-bar :items="[{label: 'A empresa'}, { label: 'Serviços'}]"></menu-bar>
+			<!-- <menu-bar :items="[{label: 'A empresa'}, { label: 'Serviços'}]"></menu-bar> -->
 
 		</div>
+
+		<input-form></input-form>
+
+		<my-list></my-list>
+
 	</div>
 
 </div>
@@ -67,5 +72,27 @@
 				<li><a href="#">One more separated link</a></li>
 			</ul>
 		</li> -->
+	</ul>
+</template>
+
+
+<template id="form">
+	<div class="panel panel-default">
+		<div class="panel-body">
+	    	<div class="form-group">
+	    		<label for="titulo">Título</label>
+	    		<input v-model="title" type="text" class="form-control">
+	    	</div>
+	    	<button @click.stop.prevent="submit()" class="btn btn-primary">Enviar</button>
+	  	</div>
+	</div>
+</template>
+
+
+<template id="list">
+	<ul class="list-group">
+		<li v-for="item in list" class="list-group-item">
+			{{ item.title }}
+		</li>
 	</ul>
 </template>

@@ -31,6 +31,54 @@ Vue.component('menu-bar', {
 });
 
 
+
+Vue.component('input-form', {
+  template: '#form',
+
+  data() {
+    return {
+      title: '',
+    }
+  },
+
+  methods: {
+    submit() {
+      this.$eventHub.$emit('submit', this.title);
+    }
+  }
+});
+
+Vue.component('my-list', {
+  template: '#list',
+
+  created() {
+
+    var vm = this;
+
+    this.$eventHub.$on('submit', function(title) {
+
+      if (title) {
+        vm.list.push({ title: title});
+      }
+
+    });
+  },
+
+  data() {
+    return {
+      list: [
+        { title: 'Buscar o Thomas' },
+      ]
+    }
+  }
+});
+
+
+// var eventBus = new Vue();
+
+Vue.prototype.$eventHub = new Vue();
+
+
 var vm = new Vue({
   el: '#main',
 
@@ -38,6 +86,6 @@ var vm = new Vue({
     title: 'Teste Codeigniter + Vue',
   }
 
-})
+});
 
 
