@@ -20,7 +20,7 @@
 		    		Usuários
 					<br>
 
-		    		<button class="btn btn-success" @click.stop.prevent="getUsers()">Lista usuários por mixin - ajax (resource)</button>
+		    		<button class="btn btn-success" @click.stop.prevent="getUsers()">Lista usuários por mixin ajax (axios)</button>
 
 					<br><br>
 

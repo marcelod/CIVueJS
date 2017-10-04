@@ -28,4 +28,17 @@ class Bootstrap extends MY_Controller {
 		$this->render('bootstrap_ajax_resource');
 	}
 
+	public function ajax_axios()
+	{
+		$this->data['css'] = load_css('bootstrap.min');
+		$this->data['js'] = load_js([
+			'axios.min',
+			'test_bootstrap_ajax_axios_vue',
+			'jquery.min',
+			'bootstrap.min'
+		]);
+
+		$this->render('bootstrap_ajax_axios');
+	}
+
 }
