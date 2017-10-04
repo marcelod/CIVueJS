@@ -73,6 +73,10 @@ Vue.component('my-list', {
   }
 });
 
+Vue.component('panel', {
+  template: '#panel'
+});
+
 
 // var eventBus = new Vue();
 

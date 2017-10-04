@@ -17,6 +17,17 @@
 
 		<my-list></my-list>
 
+		<panel>
+			<div class="panel-heading" slot="title">
+		    	<h3 class="panel-title">Panel title</h3>
+		  	</div>
+		  	<template slot=body>
+			  	<div class="panel-body" slot="body">
+		    		Panel content
+		  		</div>
+		  	</template>
+		</panel>
+
 	</div>
 
 </div>
@@ -95,4 +106,12 @@
 			{{ item.title }}
 		</li>
 	</ul>
+</template>
+
+
+<template id="panel">
+	<div class="panel panel-default">
+		<slot name="title"></slot>
+		<slot name="body"></slot>
+	</div>
 </template>
