@@ -13,12 +13,10 @@
 
 		<panel>
 			<div class="panel-heading" slot="title">
-		    	<h3 class="panel-title">Panel title</h3>
+		    	<h3 class="panel-title">Usuários</h3>
 		  	</div>
 		  	<template slot=body>
 			  	<div class="panel-body" slot="body">
-		    		Usuários
-					<br>
 
 		    		<button class="btn btn-success" @click.stop.prevent="getUsers()">Lista usuários por mixin - ajax (resource)</button>
 
