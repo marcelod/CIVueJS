@@ -13,6 +13,11 @@ class MY_Controller extends CI_Controller {
 		$this->data['js']  = '';
 	}
 
+	public function index()
+	{
+		$this->render();
+	}
+
 
 	public function render($view = '')
 	{
