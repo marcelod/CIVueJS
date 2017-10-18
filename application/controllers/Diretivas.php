@@ -53,4 +53,36 @@ class Diretivas extends MY_Controller {
 
 		$this->render('diretivas/tarefa1');
 	}
+
+
+	public function forRange()
+	{
+		$this->data['js'] = load_js('diretivas/for_range');
+
+		$this->render('diretivas/for_range');
+	}
+
+	public function forArray()
+	{
+		$this->data['js'] = load_js('diretivas/for_array');
+
+		$this->render('diretivas/for_array');
+	}
+
+	public function forArrayObject()
+	{
+		$this->data['js'] = load_js('diretivas/for_array_object');
+
+		$this->render('diretivas/for_array_object');
+	}
+
+	public function tarefa2()
+	{
+		$this->data['js'] = load_js('diretivas/tarefa2');
+
+		$this->render('diretivas/tarefa2');
+	}
+
+
+
 }
