@@ -11,14 +11,7 @@ class Diretivas extends MY_Controller {
 
 		$this->data['css'] = load_css([
 			'bootstrap.min',
-			// 'bootstrap-vue.min',
-			// 'starter-template',
 		]);
-
-		// $this->data['js'] = load_js([
-		// 	'polyfill.min',
-		// 	'bootstrap-vue'
-		// ]);
 	}
 
 	public function index()
@@ -82,7 +75,5 @@ class Diretivas extends MY_Controller {
 
 		$this->render('diretivas/tarefa2');
 	}
-
-
 
 }
